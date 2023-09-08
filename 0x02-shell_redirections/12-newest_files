@@ -1,2 +1,2 @@
 #!bin/bash
-ls -t1 | head -n 10
+find . -maxdepth 1 -type f | xargs -I {} ls -td {} | head -n 10

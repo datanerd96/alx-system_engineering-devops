@@ -1,2 +1,2 @@
-#!bin/bash
-ls -1tp | grep -v / | head -n -10
+#!/bin/bash
+find . -maxdepth 1 -type f -printf "%T@ %p\n" | sort -nr | cut -d' ' -f2- | head -n 10

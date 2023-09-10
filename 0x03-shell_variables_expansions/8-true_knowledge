@@ -1,0 +1,2 @@
+#!/bin/bash
+[[ -z "${TRUEKNOWLEDGE}" ]] || ! [[ "${TRUEKNOWLEDGE}" =~ ^[0-9]+$ ]] && echo "Error: TRUEKNOWLEDGE is either not set or not a valid number." || echo $(( 128 + ${TRUEKNOWLEDGE} ))

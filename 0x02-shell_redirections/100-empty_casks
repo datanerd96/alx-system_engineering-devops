@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -empty -print | while read line; do echo "${line##*/}"; done; find . -type d -empty -print | while read line; do echo "${line##*/}"; done
+find . -empty -exec basename {} \;
